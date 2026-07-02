@@ -10,6 +10,8 @@ import { v2 as cloudinary } from "cloudinary";
 import myHotelRoutes from "./routes/my-hotels";
 import hotelRoutes from "./routes/hotels";
 import bookingRoutes from "./routes/my-bookings";
+import dns from 'dns'
+dns.setServers(['1.1.1.1','8.8.8.8'])
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
